@@ -10,12 +10,13 @@
 #define N 50
 #define M 3
 double accounts[M][N];
-void open(double accounts[][N]);
-void checkMoney(double accounts[][N]);
-void deposit(double accounts[][N]);
-void withdraw(double accounts[][N]);
-void close(double accounts[][N]);
-void interest(double accounts[][N]);
+double castDouble(double);
+void open(double accounts[][N],double);
+void checkMoney(double accounts[][N],int);
+void deposit(double accounts[][N],int,double);
+void withdraw(double accounts[][N],int,double);
+void close(double accounts[][N],int);
+void interest(double accounts[][N],double);
 void print(double accounts[][N]);
 void clear(double accounts[][N]);
 #endif /* MYBANK_H_ */
