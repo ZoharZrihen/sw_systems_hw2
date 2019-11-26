@@ -22,15 +22,15 @@ void open(double accounts[][N],double amount)
 {
 	int i=0;
 	amount=castDouble(amount);
-	if (amount<0){
-		printf("error: cannot deposit negative amount");
+	if (amount<=0){
+		printf("error: cannot deposit illegal amount\n");
 		return;
 	}
 	while(accounts[0][i]!=0 && i<N){
 		i++;
 	}
 	if (i>=N) {
-		printf("error: no account space available");
+		printf("error: no account space available\n");
 		return;
 	}
 	accounts[0][i]=1;
