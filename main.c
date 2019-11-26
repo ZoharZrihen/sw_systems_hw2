@@ -12,8 +12,9 @@ int main(){
 	int accountNumber=0;
 	printf("Welcome to the bank\n");
 	printf("Please insert transaction type: ");
-	if (scanf(" %c",&c)==1)
-		while (c!='E')
+	while (scanf(" %c",&c)!=1)
+		printf("Please insert transaction type: ");
+	while (c!='E')
 	{
 	switch (c){
 	case 'O':
@@ -67,7 +68,6 @@ int main(){
 		break;
 	default:
 		printf("Error: wrong transaction input.\n");
-
 		}
 	printf("Please insert transaction type: ");
 	while (scanf(" %c",&c)!=1)
