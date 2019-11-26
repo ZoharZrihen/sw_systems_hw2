@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include "myBank.h"
 int main(){
-	char c;
+	char c=0;
 	double amount=0;
 	int accountNumber=0;
 	printf("Welcome to the bank\n");
